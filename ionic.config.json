@@ -1,0 +1,7 @@
+{
+  "name": "Evacuation Apps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
