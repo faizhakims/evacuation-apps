@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <!-- Bagian untuk peta -->
+  <div id="map" style="height: 80%;"></div>
+
+  <!-- Tombol Sudah Aman -->
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-button color="success" size="medium" routerLink="/home" class="poppins-text-bold">
+      Sudah aman?
+    </ion-button>
+  </ion-fab>
+
+  <!-- Bagian Navigasi -->
+  <div class="navigation-box">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+    <ion-text color="light">
+      <h1 class="poppins-text-bold">{{distance}} M</h1>
+      <p class="poppins-text-bold">{{direction}}</p>
+    </ion-text>
+  </div>
+</ion-content>

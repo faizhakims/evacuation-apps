@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title size="large" class="poppins-text-bold color-text">Report Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="background">
+  <ion-card>
+    <ion-card-content class="adjust-text" color="#ffffff">
+      <h1>WARNING!</h1>
+      If you feel in danger, try to find a safe place and then report this incident by filling in the form below. officers will come to evacuate you in a few moments!
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item>  
+      <ion-input
+      label="Input Name" 
+      labelPlacement="floating" 
+      [counter]="true"
+      ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input
+      label="Input Location" 
+      labelPlacement="floating" 
+      [counter]="true"
+      ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-select label="Choose Disaster" label-placement="floating">
+        <ion-select-option value="Earthquake">Earthquake</ion-select-option>
+        <ion-select-option value="Eruption Volcano">Eruption Volcano</ion-select-option>
+        <ion-select-option value="Tsunami">Tsunami</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <!-- Bisa ditambahin kalo kurang -->
+    <ion-item>
+      <ion-button class="poppins-text-medium" (click)="takePicture()">Take a Picture</ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-card *ngIf="image">
+    <img [src]="image" />
+  </ion-card>
+
+  <ion-fab class = "floating-button floating-button-emergency" slot="fixed" vertical="bottom" horizontal="end">
+    <div class=" flex-center">
+      <ion-button shape="round" size="large" color="danger">
+        Report</ion-button>
+    </div>
+</ion-fab>
+</ion-content>

@@ -1,20 +1,99 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" padding class="background">
+  <ion-text class="flex-center poppins-text-bold color-text">
+    <h1>Evacuation Guide</h1>
+  </ion-text>
+  <!-- Card Gunung Meletus -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="poppins-text-medium color-text">Eruption Evacuation</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="poppins-text-light color-text">
+            Description
+          </ion-col>
+          <ion-col size="auto">
+            <div style="width: 100px">
+              <div class=" flex-right">
+                <img alt="Flood" src="../assets/img/mountain.png" class="circle-image"/>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <ion-button routerLink="/erupting" fill="clear">></ion-button>
+  </ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Card Tsunami -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="poppins-text-medium color-text">Tsunami Evacuation</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>      
+    <ion-grid>
+      <ion-row>
+        <ion-col class="poppins-text-light color-text">
+          Description
+        </ion-col>
+        <ion-col size="auto">
+          <div style="width: 100px">
+            <div class=" flex-right">
+              <img alt="Tsunami" src="../assets/img/tsunami.png" class="circle-image"/>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-card-content>
+    <ion-button routerLink="/tsunami" fill="clear">></ion-button>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- card gempa -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="poppins-text-medium color-text">Earthquake Evacuation</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="poppins-text-light color-text">
+            Descpription
+          </ion-col>
+          <ion-col size="auto">
+            <div style="width: 100px">
+              <div class=" flex-right">
+                <img alt="Earthquake" src="../assets/img/gempa.png" class="circle-image"/>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <ion-button routerLink="/earthquake" fill="clear">></ion-button>
+  </ion-card>
+  
+  <!-- Emergency button -->
+  <ion-fab class = "floating-button floating-button-emergency" slot="fixed" vertical="bottom" horizontal="end">
+      <div class=" flex-center">
+        <ion-button routerLink="/form" shape="round" size="large" color="danger">
+          <ion-icon name="warning-outline"></ion-icon>
+          EMERGENCY</ion-button>
+      </div>
+  </ion-fab>
+
+  <!-- ChatBot Button -->
+  <ion-fab class = "floating-button" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="custom-button" routerLink="/chatroom">
+      <ion-icon name="chatbubbles-outline" color="#ffffff"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!-- KALAU UDAH FIX DIHAPUS YAAA INI SEBAGAI CONTOH BUAT AKSES AJA -->
+  <ion-button routerLink="/emergency"></ion-button>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-footer>

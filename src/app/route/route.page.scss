@@ -1,0 +1,43 @@
+#map {
+    height: 70%;
+    width: 100%;
+  }
+  
+  .navigation-box {
+    background-color: #071744;
+    padding: 7vh;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  ion-text h1 {
+    margin-left: 7px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  ion-text p {
+    margin-left: 7px;
+    font-size: 1.8rem;
+    text-align: right;
+  }
+  
+  ion-icon {
+    color: white;
+    font-size: 6.5rem;
+    margin-right: 7px;
+  }
+  
+  .poppins-text-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }

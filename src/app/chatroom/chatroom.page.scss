@@ -1,0 +1,65 @@
+.chat-footer {
+    background-color: #060527; /* Warna background untuk footer */
+    padding: 10px;
+  }
+  
+  .chat-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chat-input {
+    flex: 1;
+    margin-right: 10px;
+    --padding-start: 15px;
+    --padding-end: 15px;
+    border-radius: 15px;
+}
+
+  .send-button {
+    --background: #060527;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+.chat-message {
+    background-color: #060527;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.color-text{
+  color:#060527;
+}
+
+.poppins-text-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.poppins-text-light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.chat-slider {
+  height: 150px; /* Atur ketinggian*/
+  padding: 10px;
+}
+
+.chat-bubble {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #333;
+  display: inline-block;
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title size="medium" class="poppins-text-bold color-text">Help Center</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Nampilin pesan -->
+  <div *ngFor="let msg of messages">
+    <div class="chat-message">
+      {{ msg }}
+    </div>
+  </div>
+  <!-- bubble chat rekomend
+  <swiper [slidesPerView]="1" [spaceBetween]="10" [pagination]="true" [navigation]="true">
+    <swiper-slide *ngFor="let chat of chatBubbles">
+      <div class="chat-bubble">
+        {{ chat }}
+      </div>
+    </swiper-slide>
+  </swiper> -->
+</ion-content>
+
+<ion-footer class="chat-footer">
+  <div class="chat-input-wrapper">
+    <ion-input [(ngModel)]="message" class="chat-input poppins-text-light" placeholder="Type a message...">
+    </ion-input>
+    <ion-button 
+    class="send-button" expand="block" (click)="sendMessage()"><ion-icon name="paper-plane-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-footer>

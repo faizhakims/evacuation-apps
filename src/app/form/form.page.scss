@@ -1,0 +1,69 @@
+ion-input.custom {
+    --background: #ffffff00;
+    --color: #060527;
+    --placeholder-color: #060527;
+    --placeholder-opacity: 1;
+  
+    --padding-bottom: 10px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --padding-top: 10px;
+  }
+
+  .poppins-text-medium {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .color-text{
+    color:#060527;
+  }
+
+  .flex-center{
+    display: flex;
+    justify-content: center;
+  }
+
+  .floating-button {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+  }
+  
+  .floating-button-emergency {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ion-button {
+    --background: #060527;
+    --background-hover: #060527;
+  
+    --color: rgb(255, 255, 255);
+    --border-radius: 10px;
+    --border-width: 1px;
+
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+
+  .adjust-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+    text-align: justify;
+    --color: #F8F8F8;
+  }
+
+  ion-content.background{
+    --ion-background-color:#F8F8F8;
+  }
+
+  ion-card {
+    --background: #bca20f;
+    --color: #ffff;
+    border-radius: 17px;
+  }

@@ -1,0 +1,65 @@
+ion-content.background{
+  --ion-background-color:#FF0000;
+}
+
+ion-button {
+    --background: #ffffff;
+    --background-hover: #ffffff;
+    --background-activated: #ffffff;
+    --background-focused: #ffffff;
+  
+    --color: #060527;
+  
+    --border-radius: 15px;
+    --border-width: 1px;
+
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+
+.center-content-grid {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .button-below {
+    margin-top: 1vh;
+  }
+  
+
+  .circle-image {
+    width: 50px; /* Lebar */
+    height: 50px; /* samain */
+    border-radius: 50%; /* biar bulat*/
+    object-fit: cover; /* biar proporsional */
+    // border: 2px solid #000; /* border doang */
+  }
+  
+  .padded-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .justify-text {
+  text-align: justify;
+}
+
+  .center-text{
+    text-align: center;
+  }
+  
+  .poppins-text-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  .poppins-text-light {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  .poppins-text-medium {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
